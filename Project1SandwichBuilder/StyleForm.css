@@ -1,0 +1,13 @@
+﻿body {
+    background-image: url(pics/sandwhich_builderBackground.jpg);
+}
+
+
+.customerForm {
+    text-align: center;
+    margin: auto;
+    border: solid;
+    background-color: tan;
+    width: 500px;
+    height: max-content;
+}

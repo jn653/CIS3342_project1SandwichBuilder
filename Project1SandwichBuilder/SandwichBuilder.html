@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleForm.css">
+    <title></title>
+</head>
+<body>
+    <form id="form1" method="post" action="SandwichServerSide.aspx">
+
+        <div class="customerForm">
+            <h1> Welcome to the Sandwich Shop</h1>
+
+            Enter your name:
+            <input id=" txtName" type="text" name="txtName" />
+            <br />
+            <br />
+            Enter your phone number:
+            <input id="txtNumber" tpye="text" name="textNumber" />
+            <br />
+            <br />
+            What size sandwich would you like?
+            <select id="sandwichSize" name="sandwichSize">
+                <option id="Small" value="Small">Small - $2.00</option>
+                <option id="Medium" value="Medium">Medium - $3.00</option>
+                <option id="Large" value="Large">Large - $4.00</option>
+            </select>
+            <br />
+            <br />
+            Would you like your sandwich toasted?
+            <input type="radio" id="radioYes" name="radioToast"  value="Yes" />
+            <label for="radioYes">Yes</label>
+            <input type="radio" id="radioNo" name="radioToast" value="No" />
+            <label for="radioNo">No</label>
+            <br />
+            <br />
+            What type of spread would you like? <br />
+            <input type="radio" id="mayoSpread" name="radioSpread" value="Mayo">
+            <label for="mayoSpread">Mayo - $0.50</label> <br />
+            <input type="radio" id="mustardSpread" name="radioSpread" value="Mustard">
+            <label for="mustardSpread">Mustard - $0.50</label> <br/>
+            <input type="radio" id="ranchSpread" name="radioSpread" value="Ranch">
+            <label for="ranchSpread">Ranch - $0.50</label> <br />
+            <input type="radio" id="avocadoSpread" name="radioSpread" value="Avocado">
+            <label for="avocadoSpread">Avocado - $0.50</label> <br />
+            <input type="radio" id="chipotleSpread" name="radioSpread" value="Chipotle">
+            <label for="chipotleSpread">Chipotle - $0.50</label>
+            <br />
+            <br />
+            What type of toppings would you like?
+            <input id="Lettuce" type="checkbox" name="checkLettuce" value="Lettuce - $0.25"/>
+            <label for="checkLettuce">Lettuce - $0.25</label>
+            <input id="Tomato" type="checkbox" name="checkTomato" value="Tomato - $0.25" />
+            <label for="checkTomato">Tomato - $0.25</label>
+            <input id="Pickles" type="checkbox" name="checkPickles" value="Pickles - $1.00" />
+            <label for="checkPickles">Pickles - $1.00</label>
+            <input id="Onions" type="checkbox" name="checkOnions" value="Onions - $1.00"/>
+            <label for="checkOnions">Onions - $1.00</label>
+            <input id="checkPeppers" type="checkbox" name="checkPeppers" value="Peppers - $1.00" />
+            <label for="Peppers">Peppers - $1.00</label>
+            <br />
+            <br />
+            Would you like any extra toppings?
+            <input id="checkBacon" type="checkbox" name="checkExtraBacon" value="Bacon - $1.25" />
+            <label for="checkBacon">Bacon - $1.25</label>
+            <input id="checkExtraCheese" type="checkbox" name="checkExtraCheese" value="extraCheese - $0.50" />
+            <label for="checkExtraCheese">Extra Cheese - $0.50</label>
+            <input id="checkExtraMeat" type="checkbox" name="checkExtraMeat" value=" extraMeat - $0.75" />
+            <label for="checkExtraMeat">Extra Meat - $0.75</label>
+            <input id="checkItalianSausage" type="checkbox" name="checkExtraItalianSausage" value=" ItalianSausage - $1.25" />
+            <label for="checkItalianSausage">Italian Sausage - $1.25</label>
+            <input id="checkHotCheetos" type="checkbox" name="checkExtraHotCheetos" value="HotCheetos - $1.75" />
+            <label for="checkHotCheetos">Hot Cheetos - $1.75</label>
+            <br />
+            <br />
+            Upgrade your order to a meal and get a drink and any side from these five options:
+            <select id="sideOption" name="sideOption">
+                <option id="Cookie" value="Cookie - $0.50">Cookie - $0.50</option>
+                <option id="Chips" value="Chips - $0.50">Chips - $0.50</option>
+                <option id="Fries" value="Fries - $1.00">Fries - $1.00</option>
+                <option id="Fruits" value="Fruits - $2.00">Fruits - $2.00</option>
+                <option id="GarlicBread" value="GarlicBread - $2.50">Garlic Bread - $2.50</option>
+            </select>
+            <br />
+            <br />
+            Would you like to leave a tip? If no tip type "0.00"
+            <input id=" txtTip" type="text" name="txtTip" />
+            <br />
+            <br />
+            <input id="submitBtn" type="submit" name="submitBtn" value="Submit Order" />
+
+        </div>
+    </form>
+</body>
+</html>
